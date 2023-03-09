@@ -1,18 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import './index.css';
 import Hello from './components/Hello'
 import Name from './components/Name'
 import Message from './components/Message'
 import ContainerSample from './components/ContainerSample'
 import ContextSample from './components/ContextSample'
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals'
+import Parent from './components/Parent'
+import ButtonParent from './components/ButtonParent'
+import { UseMemoSample } from './components/UseMemoSample'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <UseMemoSample />
+    <ButtonParent />
+    <Parent />
     <Hello />
     <Name />
     <Message />
