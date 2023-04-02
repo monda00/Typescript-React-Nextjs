@@ -10,12 +10,14 @@ import reportWebVitals from './reportWebVitals'
 import Parent from './components/Parent'
 import ButtonParent from './components/ButtonParent'
 import { UseMemoSample } from './components/UseMemoSample'
+import { Clock } from './components/Clock'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <Clock />
     <UseMemoSample />
     <ButtonParent />
     <Parent />
